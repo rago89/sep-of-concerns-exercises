@@ -6,7 +6,6 @@ const buttonEl = document.createElement('button');
 buttonEl.innerHTML = 'log in';
 console.log(buttonEl.nodeName, buttonEl.cloneNode(true));
 
-
 const loginHandler = () => {
   const username = prompt('enter your user name');
   if (username === null) {
@@ -21,8 +20,7 @@ const loginHandler = () => {
 };
 
 // add the event listener to the button so a user can login
-_;
-
+buttonEl.addEventListener('click', loginHandler);
 
 // "click" the button once
 const clickEvent1 = new Event('click');

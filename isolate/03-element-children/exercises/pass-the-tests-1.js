@@ -9,10 +9,9 @@ ulEl.innerHTML = `
 console.log(ulEl.nodeName, ulEl.cloneNode(true));
 
 // --- write some code ---
-
-
-
-
+ulEl.firstElementChild.innerHTML = 'toad';
+ulEl.children[1].innerHTML = 'frog';
+ulEl.lastElementChild.innerHTML = 'salamander';
 // --- --- --- --- --- ---
 
 console.log(ulEl.nodeName, ulEl.cloneNode(true));

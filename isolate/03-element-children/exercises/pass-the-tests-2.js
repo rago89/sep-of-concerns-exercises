@@ -9,17 +9,15 @@ divEl.innerHTML = `
 console.log(divEl.nodeName, divEl.cloneNode(true));
 
 // --- write some code ---
-
-
-
-
+divEl.firstElementChild.removeAttribute('href');
+divEl.firstElementChild.setAttribute('href', '#top');
+const button = divEl.firstElementChild.firstElementChild;
+button.innerHTML = 'to the top';
+console.log(divEl.nodeName, divEl.cloneNode(true));
 // --- --- --- --- --- ---
 
 console.log(divEl.nodeName, divEl.cloneNode(true));
 
-console.assert(divEl.children[0].getAttribute('href') === '#top',
-  'Test: href');
+console.assert(divEl.children[0].getAttribute('href') === '#top', 'Test: href');
 
-console.assert(divEl.children[0].children[0].innerHTML === 'to the top',
-  'Test: button innerHTML');
-
+console.assert(divEl.children[0].children[0].innerHTML === 'to the top', 'Test: button innerHTML');
