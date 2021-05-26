@@ -8,14 +8,14 @@
 */
 
 const _1_element = document.createElement('input');
-const _1_test = _1_element.nodeName === _;
+const _1_test = _1_element.nodeName === 'INPUT';
 console.assert(_1_test, 'Test 1');
 
 const _2_element = document.createElement('iNPuT');
-const _2_test = _2_element.nodeName === _;
+const _2_test = _2_element.nodeName === 'INPUT';
 console.assert(_2_test, 'Test 2');
 
-const _3_element = document.createElement('_');
+const _3_element = document.createElement('article');
 const _3_test = _3_element.nodeName === 'ARTICLE';
 console.assert(_3_test, 'Test 3');
 
