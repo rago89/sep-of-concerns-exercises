@@ -8,7 +8,8 @@
 
 // create a new button
 const buttonEl = document.createElement('button');
-
+buttonEl.id = "hello";
+buttonEl.name = "rafael"
 // write two different handlers
 const helloHandler = () => {
   alert('hello!');
